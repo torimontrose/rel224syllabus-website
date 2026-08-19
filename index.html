@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>REL 224: Introduction to Buddhism — Course Syllabus</title>
+<meta name="description" content="Syllabus for REL 224: Introduction to Buddhism, Fall 2026.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main-content">Skip to main content</a>
+
+<!-- Decorative background mandalas — real sacred-geometry construction
+     (lotus-petal ring, square palace with four gates, concentric circles),
+     rendered as restrained line art. Purely visual, hidden from assistive tech. -->
+<div class="mandala-decor" aria-hidden="true">
+  <svg class="m1" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="0.6">
+    <circle cx="100" cy="100" r="88"/>
+    <circle cx="100" cy="100" r="80"/>
+    <g>
+      <path d="M90.30 38.76 Q100.00 22.00 109.70 38.76"/>
+      <path d="M114.47 39.71 Q129.85 27.94 132.39 47.14"/>
+      <path d="M136.44 49.84 Q155.15 44.85 150.16 63.56"/>
+      <path d="M152.86 67.61 Q172.06 70.15 160.29 85.53"/>
+      <path d="M161.24 90.30 Q178.00 100.00 161.24 109.70"/>
+      <path d="M160.29 114.47 Q172.06 129.85 152.86 132.39"/>
+      <path d="M150.16 136.44 Q155.15 155.15 136.44 150.16"/>
+      <path d="M132.39 152.86 Q129.85 172.06 114.47 160.29"/>
+      <path d="M109.70 161.24 Q100.00 178.00 90.30 161.24"/>
+      <path d="M85.53 160.29 Q70.15 172.06 67.61 152.86"/>
+      <path d="M63.56 150.16 Q44.85 155.15 49.84 136.44"/>
+      <path d="M47.14 132.39 Q27.94 129.85 39.71 114.47"/>
+      <path d="M38.76 109.70 Q22.00 100.00 38.76 90.30"/>
+      <path d="M39.71 85.53 Q27.94 70.15 47.14 67.61"/>
+      <path d="M49.84 63.56 Q44.85 44.85 63.56 49.84"/>
+      <path d="M67.61 47.14 Q70.15 27.94 85.53 39.71"/>
+    </g>
+    <rect x="52" y="52" width="96" height="96"/>
+    <g id="m1-gate">
+      <rect x="94" y="30" width="12" height="22"/>
+      <rect x="88" y="30" width="24" height="8"/>
+    </g>
+    <use href="#m1-gate" transform="rotate(90 100 100)"/>
+    <use href="#m1-gate" transform="rotate(180 100 100)"/>
+    <use href="#m1-gate" transform="rotate(270 100 100)"/>
+    <circle cx="100" cy="100" r="44"/>
+    <circle cx="100" cy="100" r="30"/>
+    <circle cx="100" cy="100" r="16"/>
+    <circle cx="100" cy="100" r="2.5" fill="currentColor"/>
+  </svg>
+  <svg class="m2" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="0.5">
+    <circle cx="100" cy="100" r="92"/>
+    <circle cx="100" cy="100" r="70"/>
+    <circle cx="100" cy="100" r="50"/>
+    <circle cx="100" cy="100" r="32"/>
+    <circle cx="100" cy="100" r="16"/>
+    <g>
+      <path d="M100 8 L100 32 M100 168 L100 192 M8 100 L32 100 M168 100 L192 100"/>
+      <path d="M35 35 L50 50 M150 150 L165 165 M165 35 L150 50 M35 165 L50 150"/>
+    </g>
+  </svg>
+</div>
+
+<header class="site-header">
+  <span class="site-header__eyebrow">Religious Studies</span>
+  <h1>REL 224: Introduction to Buddhism</h1>
+  <p class="subtitle">Origins, transformations, and the study of Buddhism across Asia and the globe.</p>
+
+  <svg class="ring-divider" viewBox="0 0 100 100" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="1.4">
+    <circle cx="50" cy="50" r="12"/>
+    <circle cx="50" cy="50" r="22"/>
+    <circle cx="50" cy="50" r="32"/>
+    <rect x="24" y="24" width="52" height="52"/>
+    <g id="ring-gate">
+      <rect x="46" y="10" width="8" height="14"/>
+      <rect x="42" y="10" width="16" height="5"/>
+    </g>
+    <use href="#ring-gate" transform="rotate(90 50 50)"/>
+    <use href="#ring-gate" transform="rotate(180 50 50)"/>
+    <use href="#ring-gate" transform="rotate(270 50 50)"/>
+  </svg>
+</header>
+
+<!-- Tab navigation: WAI-ARIA tabs pattern. Arrow keys / Home / End move focus. -->
+<nav class="tabs-nav" role="tablist" aria-label="Syllabus sections">
+  <button type="button" role="tab" id="tab-info" aria-controls="panel-info" aria-selected="true" data-hash="info" tabindex="0" class="tab-btn">Course Info</button>
+  <button type="button" role="tab" id="tab-description" aria-controls="panel-description" aria-selected="false" data-hash="description" tabindex="-1" class="tab-btn">Description &amp; Objectives</button>
+  <button type="button" role="tab" id="tab-graded" aria-controls="panel-graded" aria-selected="false" data-hash="graded" tabindex="-1" class="tab-btn">Graded Elements</button>
+  <button type="button" role="tab" id="tab-policies" aria-controls="panel-policies" aria-selected="false" data-hash="policies" tabindex="-1" class="tab-btn">Policies</button>
+  <button type="button" role="tab" id="tab-schedule" aria-controls="panel-schedule" aria-selected="false" data-hash="schedule" tabindex="-1" class="tab-btn">Weekly Schedule</button>
+  <button type="button" role="tab" id="tab-ashoka" aria-controls="panel-ashoka" aria-selected="false" data-hash="ashoka" tabindex="-1" class="tab-btn">Ashoka Game</button>
+  <button type="button" role="tab" id="tab-rubrics" aria-controls="panel-rubrics" aria-selected="false" data-hash="rubrics" tabindex="-1" class="tab-btn">Rubrics</button>
+</nav>
+
+<main id="main-content">
+
+  <!-- ============================= TAB 1: COURSE INFO ============================= -->
+  <section id="panel-info" class="tab-panel" role="tabpanel" aria-labelledby="tab-info" tabindex="0">
+    <h2>
+      <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3.5"/></svg>
+      Course Information &amp; Contact
+    </h2>
+
+    <div class="info-grid">
+      <div class="info-card">
+        <h3>Course</h3>
+        <dl>
+          <!-- EDIT: course number, title -->
+          <dt>Course</dt>
+          <dd>REL 224: Introduction to Buddhism</dd>
+          <dt>Term</dt>
+          <dd>Fall 2026</dd>
+          <!-- EDIT: meeting days/time -->
+          <dt>Meets</dt>
+          <dd>Tue / Thu, 1:00&ndash;2:15 PM</dd>
+          <dt>Location</dt>
+          <dd>Hipp Hall 104</dd>
+        </dl>
+      </div>
+
+      <div class="info-card">
+        <h3>Instructor</h3>
+        <dl>
+          <dt>Name</dt>
+          <dd>Dr. Tori Montrose</dd>
+          <dt>Email</dt>
+          <dd><a href="mailto:victoria.montrose@furman.edu">victoria.montrose@furman.edu</a></dd>
+          <dt>Office</dt>
+          <dd>Furman Hall 206J</dd>
+          <!-- EDIT: office hours -->
+          <dt>Office Hours</dt>
+          <dd>W and F 12:30&ndash;1:20 PM, or by appointment: <a href="https://vmontrose.youcanbook.me/">book a time</a></dd>
+        </dl>
+      </div>
+
+      <div class="info-card">
+        <h3>Response Time</h3>
+        <!-- EDIT: your actual email turnaround policy -->
+        <p>I try to respond to emails within 48 hours, Monday&ndash;Friday. If a matter is urgent or I haven&rsquo;t responded within 2 business days, please don&rsquo;t hesitate to send a follow-up email or book an appointment using the link in the Office Hours box.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== TAB 2: DESCRIPTION & OBJECTIVES ===================== -->
+  <section id="panel-description" class="tab-panel" role="tabpanel" aria-labelledby="tab-description" tabindex="0" hidden>
+    <h2>
+      <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 5h16M4 12h16M4 19h10"/></svg>
+      Course Description &amp; Learning Outcomes
+    </h2>
+
+    <h3>Course Description</h3>
+    <p>This course serves as an introduction to the diversity of Buddhist traditions. Engaging with primary texts and secondary scholarship, we will study the origins of Buddhism and trace its development across Asia and the globe. We use an interdisciplinary lens to cover major themes in the history, thought, and practice of Buddhism. This course also examines and critiques the complicated colonial and orientalist history of Buddhism as an object of study.</p>
+
+    <h3>Course Texts</h3>
+    <p>C. Pierce Salguero. <em>Buddhish: A Guide to the 20 Most Important Buddhist Ideas for the Curious and Skeptical</em>. Beacon Press, 2022. <strong>All other readings will be posted to Moodle.</strong></p>
+
+    <h3>Learning Outcomes</h3>
+    <ul class="obj-list">
+      <li>We will explain foundational aspects of Buddhism and discuss the diversity of Buddhist communities, expressions, and traditions.</li>
+      <li>We will engage in critical self-reflection on our understanding and perception of Buddhism and Buddhist cultures and identify changes to that understanding over time.</li>
+      <li>We will deconstruct and evaluate the historical development, predominant assumptions, and popular methods in the field of Buddhist Studies.</li>
+      <li>We will be able to analyze, summarize, and relate Buddhist works and ideas.</li>
+      <li>We will grow in our capacity to empathize with others by developing the ability to visit/inhabit their worldviews.</li>
+    </ul>
+  </section>
+
+  <!-- ===================== TAB 3: GRADED ELEMENTS ===================== -->
+  <section id="panel-graded" class="tab-panel" role="tabpanel" aria-labelledby="tab-graded" tabindex="0" hidden>
+    <h2>
+      <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 19V5m5 14V9m5 10V3m5 16v-6"/></svg>
+      Graded Elements
+    </h2>
+    <p class="lede">How your final grade is calculated, and what each element involves.</p>
+
+    <h3>Grade Breakdown</h3>
+    <div class="table-scroll">
+      <table>
+        <caption>Weighting of graded components toward your final course grade</caption>
+        <thead>
+          <tr><th scope="col">Component</th><th scope="col" class="num">Weight</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Attendance and Engagement</td><td class="num">20%</td></tr>
+          <tr><td>Reading and Reflection Journal (RRJ)</td><td class="num">25%</td></tr>
+          <tr><td>Exams (2, 12.5% each)</td><td class="num">25%</td></tr>
+          <tr><td><em>Ashoka</em> Position Paper</td><td class="num">15%</td></tr>
+          <tr><td><em>Ashoka</em> Speeches (&times;2)</td><td class="num">10%</td></tr>
+          <tr><td><em>Ashoka</em> Engagement</td><td class="num">5%</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>Element Descriptions</h3>
+
+    <div class="policy-block">
+      <h3>Attendance and Engagement &mdash; 20%</h3>
+      <p>Every version of this course is unique to the combination of students that comprise it. Your presence is an essential part of the learning experience for yourself and all of us in the room with you. This course requires you to come prepared to share your questions, struggles, and ideas surrounding the readings and content we cover. Each student is expected to actively participate in all activities and discussions. There are several ways to demonstrate engagement including small group discussions, taking notes, large group discussions, polls. See <a href="#rubrics">Engagement Rubric</a>.</p>
+    </div>
+
+    <div class="policy-block accent-maroon">
+      <h3>Engagement with Readings on Perusall</h3>
+      <p>Readings will be posted to Perusall, which can be accessed through the link on the course Moodle page. Prior to class, you will annotate the day&rsquo;s assigned reading with your comments, questions, observations, and reflections. Perusall comments are time stamped and must be made by 10am the day of class to receive full credit. I value the quality of the annotation more than the quantity of annotations you make. Thoughtful responses to classmates&rsquo; comments or questions are also welcomed.</p>
+    </div>
+
+    <div class="policy-block">
+      <h3>Reading and Reflection Journal (RRJ) &mdash; 25%</h3>
+      <p>A mix of in-class and at-home short written responses to a prompt about the readings. They will frame your thinking about the readings and help prepare you for in-class discussion or reflect on your learning. Unless you have an accommodation, these journals will be handwritten. There will be 22 entries in total. Journals will be collected every few weeks to check for completion. <strong>To be considered complete, each entry must be a minimum of 6 sentences long and must address the prompt.</strong> RRJs missed due to absence can be made up upon return to class.</p>
+      <p><strong>Midterm submission (10%):</strong></p>
+      <ul>
+        <li>5% is graded for <strong>completion</strong>: RRJ #1 is mandatory but you can skip 1 other RRJ of your choice without penalty.</li>
+        <li>5% is graded for <strong>quality</strong> &mdash; select your 3 strongest entries from RRJ #1&ndash;12. See the <a href="#rubrics">RRJ grading rubric</a> to help you determine your 3 strongest entries.</li>
+      </ul>
+      <p><strong>Final submission (15%):</strong></p>
+      <ul>
+        <li>5% is graded for <strong>completion</strong>: RRJs #14, 19, 22 are mandatory but you can skip 1 other RRJ of your choice without penalty.</li>
+        <li>10% is graded for <strong>quality</strong> &mdash; RRJs #14, 19, 22 will be graded, then select your other strongest entry from the remaining RRJs. See the <a href="#rubrics">RRJ grading rubric</a>.</li>
+      </ul>
+    </div>
+
+    <div class="policy-block accent-maroon">
+      <h3>Exams &mdash; 25%</h3>
+      <p>There will be 2 exams in this class (each worth 12.5%): a midterm (see the <a href="#schedule">Weekly Schedule</a>) and a final exam on <strong>Friday, December 11, 12:00&ndash;2:30 PM in Hipp Hall 104</strong>. They will be cumulative, but with a greater emphasis on the material taught since the midterm. Since we will be learning a lot of new terms in multiple global languages, a single 3x5-inch handwritten note card may be used during each exam. Exams will be a combination of multiple choice, short answer, and textual/image analysis.</p>
+    </div>
+
+    <div class="policy-block">
+      <h3><em>Ashoka</em> Position Paper &mdash; 15%</h3>
+      <p>You will write a 1000-word paper following your two in-class speeches as part of the <em>Ashoka</em> game. See the <a href="#ashoka">Ashoka Game tab</a> for the full prompt, citation guidelines, and grading rubric.</p>
+    </div>
+
+    <div class="policy-block accent-maroon">
+      <h3><em>Ashoka</em> Speeches (&times;2) &mdash; 10%</h3>
+      <p>Based on the position paper you write, you will give 2 short in-class speeches taking the position assigned to your role in the <em>Ashoka</em> game. Since the content of your speeches should largely match the content of your position paper, this part of the grade primarily assesses the quality of your delivery and adherence to the allotted time.</p>
+    </div>
+
+    <div class="policy-block">
+      <h3><em>Ashoka</em> Engagement &mdash; 5%</h3>
+      <p>This is a separate engagement grade from your overall course engagement grade. It captures all the ways you might engage with this game, including (but not limited to): consistently demonstrating preparation for each council session (not only the ones in which you are giving a speech); active coordination, collaboration, and communication with your faction (or across factions if the need arises); asking questions and/or commenting on others&rsquo; speeches; actions within the game that are consistent with your assigned role (liberally interpreted); and taking notes during sessions while avoiding non-game-related distractions.</p>
+    </div>
+  </section>
+
+  <!-- ============================= TAB 4: POLICIES ============================= -->
+  <section id="panel-policies" class="tab-panel" role="tabpanel" aria-labelledby="tab-policies" tabindex="0" hidden>
+    <h2>
+      <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3z"/></svg>
+      Course Policies
+    </h2>
+    <p class="lede">Please read these carefully &mdash; they explain how the class runs day to day.</p>
+
+    <div class="policy-block">
+      <h3>Statement on Accessibility and Inclusivity</h3>
+      <p>In the spirit of Universal Design for Learning, I will strive to provide an environment that is equitable and conducive to achievement and learning for all students. I recognize and value the many perspectives students bring to the classroom. Many factors&mdash;social identities, visible and invisible disabilities, family circumstances, physical location, mental health, access to the internet&mdash;all influence the experiences that every individual can have in this course. I am committed to building an environment to support your learning. I ask that we all be respectful of diverse opinions and of all class members, regardless of personal attribute, and that we all use inclusive language in written and oral work. I encourage persons with Student Office for Accessibility Resources (SOAR) accommodations or other needs that may impact your performance to meet with me promptly to make a plan for the semester.</p>
+    </div>
+
+    <div class="policy-block accent-maroon">
+      <h3>Name/Pronoun Use</h3>
+      <p>I am committed to an environment that affirms people of all gender expressions and gender identities. I will gladly honor the name or gender pronouns that are correct for you. I will never require you to disclose this information, as I view it as your choice to share if and when you desire. If you choose to share this information, please advise me early in the semester so that I may make appropriate changes to my records.</p>
+    </div>
+
+    <div class="policy-block">
+      <h3>Policies on Absences and Late Submissions</h3>
+      <p>Students are allowed <strong>3 free absences</strong> (roughly 10% of the total number of classes) regardless of the reason. I do not need you to email me or provide an explanation for these absences. These include absences due to illnesses, personal loss, athletics, religious observances, or any other reason. After 3 absences, your attendance and participation grade will be negatively impacted.</p>
+      <p><strong>The only exception to this policy is during the <em>Ashoka</em> role-playing game</strong> (see the <a href="#ashoka">Ashoka Game tab</a> for dates), when students who are absent during the game will need prior professor permission or a valid excuse with documentation from the health center or the academic dean&rsquo;s office. Unexcused absences during the game will immediately have a negative impact on your attendance and engagement grade.</p>
+      <p><strong>Late submissions</strong> following absences must be submitted on the day of return to class. Otherwise, late submissions of assignments may be accepted for partial credit depending on the circumstances.</p>
+    </div>
+
+    <div class="policy-block accent-maroon">
+      <h3>Statement on Academic Integrity</h3>
+      <p>Per <a href="https://policies.furman.edu//view.php?policy=584">Section 121.5 of Furman&rsquo;s University Policy</a>, &ldquo;All forms of academic misconduct including cheating, plagiarism, misrepresentation, and unacceptable collaboration are violations of Furman&rsquo;s academic integrity standard. Examples and explanations may be found elsewhere in official university documents (e.g., The Student Handbook and the academic integrity portion of the Furman University website).&rdquo;</p>
+      <p>Please note: Students who are suspected of submitting writing produced in any part by an AI system will be subjected to review by the Academic Discipline Committee. For more information on Generative Artificial Intelligence use in this class, see the Generative Artificial Intelligence (GAI) policy below.</p>
+      <p>It is always better to get a zero on an assignment rather than submitting something that violates the university&rsquo;s academic integrity policy, which usually results in far worse consequences.</p>
+    </div>
+
+    <div class="policy-block">
+      <h3>Course Activity Recordings</h3>
+      <p>Furman University prohibits the recording of classes by students without obtaining prior, written permission of the instructor, except in cases where Furman permits a qualified student with a documented disability to record classes as a reasonable accommodation. Students are advised of this policy in the Student Handbook. Under no circumstances should recorded classes be used in any way that denigrates and/or decontextualizes the instructor or any student whose class remarks are recorded. Unauthorized dissemination of any recorded classroom proceedings, including distribution for compensation, is strictly prohibited. The improper sharing of recorded material by students or others may constitute a violation of U.S. copyright law and is a violation of campus policy.</p>
+    </div>
+
+    <div class="policy-block accent-maroon">
+      <h3>Generative Artificial Intelligence (GAI)</h3>
+      <p>GAI is a subset of AI that utilizes machine learning models to create new, original content, such as images, text, or music, based on patterns and structures learned from existing data. The default policy is that such use is disallowed unless otherwise stated and that any such use will involve specific and explicitly communicated guidelines. As is indicated in the University academic integrity policy, use of GAI must be appropriately acknowledged and cited as you would any other source. By submitting assignments in this class, you pledge to affirm that they are your own work and you attribute use of any tools and sources. Violations of this policy will be considered academic misconduct and will be reported to the Academic Dean&rsquo;s Office.</p>
+      <p>It is your responsibility to assess the validity and applicability of any GAI output that is submitted; you bear the final responsibility. You should be aware that all GAI tools have a tendency to make up incorrect facts and fake citations or confidently reassert factual errors, that code generation models have a tendency to produce inaccurate outputs, and that image generation models can occasionally come up with highly offensive products. You will be responsible for any inaccurate, biased, offensive, or otherwise unethical content you submit regardless of whether it originally comes from you or a GAI tool. Please also note that different classes at Furman may implement different GAI policies, and it is your responsibility to conform to expectations for each course.</p>
+    </div>
+
+    <div class="policy-block">
+      <h3>Nondiscrimination Policy and Sexual Misconduct</h3>
+      <p>Furman University and its faculty are committed to supporting our students and seeking an environment that is free of bias, discrimination, and harassment. Furman does not unlawfully discriminate on the basis of race, color, national origin, sex, sexual orientation, gender identity, pregnancy, disability, age, religion, veteran status, or any other characteristic or status protected by applicable local, state, or federal law in admission, treatment, or access to, or employment in, its programs and activities.</p>
+      <p>If you have encountered any form of discrimination or harassment, including sexual misconduct (e.g. sexual assault, sexual harassment or gender-based harassment, sexual exploitation or intimidation, stalking, intimate partner violence), we encourage you to report this to the institution. If you wish to report such an incident of misconduct, you may contact Furman&rsquo;s Title IX Coordinator, Melissa Nichols (Trone Center, Suite 215; <a href="mailto:Melissa.nichols@furman.edu">Melissa.nichols@furman.edu</a>; 864.294.2221).</p>
+      <p>If you would like to speak with someone who can advise you but maintain complete confidentiality, you can talk with a counselor, a professional in the Student Health Center, or someone in the Office of Spiritual Life. If you speak with a faculty member, understand that as a mandated reporter of the University, the faculty member MUST report to the University&rsquo;s Title IX Coordinator what you share to help ensure that your safety and welfare are being addressed, consistent with the requirements of the law. However, unless there is an ongoing safety risk to you or to the Furman community, you will determine whether the university initiates any formal process. You are entitled to supportive measures (such as a no contact order or academic accommodations) regardless of whether you decide to initiate a formal process.</p>
+      <p>Additional information about Furman&rsquo;s Sexual Misconduct Policy, how to report sexual misconduct, and your rights can be found at the Furman Title IX webpage at <a href="https://www.furman.edu/titleix">www.furman.edu/titleix</a>. You do not have to go through the experience alone.</p>
+    </div>
+  </section>
+
+  <!-- ============================= TAB 5: WEEKLY SCHEDULE ============================= -->
+  <section id="panel-schedule" class="tab-panel" role="tabpanel" aria-labelledby="tab-schedule" tabindex="0" hidden>
+    <h2>
+      <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>
+      Weekly Schedule
+    </h2>
+    <p class="lede">Subject to change &mdash; announced updates will always take precedence over this page. This is a living document; the most accurate day-to-day source is the course Google Doc linked on Moodle and Perusall.</p>
+
+    <div class="editor-note">
+      <strong>Editing tip:</strong> Dates below follow Furman&rsquo;s official Fall 2026 calendar (classes Aug 25&ndash;Dec 8; Fall Break Oct 12&ndash;13; Thanksgiving Nov 25&ndash;27). Full <em>Ashoka</em> game details live on the <a href="#ashoka">Ashoka Game tab</a>.
+    </div>
+
+    <div class="table-scroll">
+      <table class="schedule-table">
+        <caption>Class-by-class schedule</caption>
+        <colgroup>
+          <col class="col-num">
+          <col class="col-date">
+          <col class="col-topic">
+          <col class="col-preclass">
+          <col class="col-rrj">
+          <col class="col-notes">
+        </colgroup>
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Date</th>
+            <th scope="col">Topic</th>
+            <th scope="col">Pre-class Activity/Assignment</th>
+            <th scope="col">RRJ #</th>
+            <th scope="col">Campus Calendar/Notes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>1</td><td>Tue. 8/25</td><td>Welcome!</td><td>Fill out the Pre-semester survey (link posted on Moodle)</td><td>RRJ 1*</td><td>Classes begin</td></tr>
+          <tr><td>2</td><td>Thu. 8/27</td><td>Indian Cosmology</td><td>Read: <em>Agganna Sutta</em>, &ldquo;How Our World Began&mdash;Knowledge of Our Origins&rdquo; (PDF on Moodle) &mdash; focus on the origin story</td><td>RRJ 2</td><td>Last day to add/drop without approval (5pm)</td></tr>
+          <tr><td>3</td><td>Tue. 9/1</td><td>Karma and Rebirth and The Buddha&rsquo;s Past Lives</td><td><ul><li>Read Salguero &ldquo;Chapter 4: Karma&rdquo;</li><li>Read &ldquo;The Story of Prince Vessantara&rdquo; (PDF on Moodle)</li></ul></td><td>RRJ 3</td><td></td></tr>
+          <tr><td>4</td><td>Thu. 9/3</td><td>Film</td><td>Watch PBS Doc, <em>The Buddha</em></td><td>RRJ 4</td><td></td></tr>
+          <tr><td>5</td><td>Tue. 9/8</td><td>The Buddha&rsquo;s Birth and Early Life</td><td><ul><li>Read Salguero Ch. 1 &ldquo;Awakening&rdquo;</li><li>Read Lopez, &ldquo;Account of the Beginning,&rdquo; p. 1&ndash;10 (PDF on Moodle)</li></ul></td><td>&mdash;</td><td>Last day to add/drop with approval (5pm)</td></tr>
+          <tr><td>6</td><td>Thu. 9/10</td><td>The Buddha&rsquo;s Liberation</td><td>Read Lopez, &ldquo;Account of the Beginning,&rdquo; p. 10&ndash;16 (PDF on Moodle)</td><td>RRJ 5</td><td></td></tr>
+          <tr><td>7</td><td>Tue. 9/15</td><td>The Buddha&rsquo;s Core Teachings I</td><td>Read Salguero Chapters 2 and 3 and short selection of primary sources (PDF on Moodle)</td><td>RRJ 6</td><td></td></tr>
+          <tr><td>8</td><td>Thu. 9/17</td><td>Core Teachings II</td><td>Read Salguero Chapter 6 and Chapter 10</td><td>RRJ 7</td><td></td></tr>
+          <tr><td>9</td><td>Tue. 9/22</td><td>The Buddha&rsquo;s Teaching Career</td><td>Read Strong, &ldquo;Teachings and Community&rdquo; from <em>Buddha: A Very Short Biography</em> (PDF on Moodle), up to page 91</td><td>RRJ 8</td><td></td></tr>
+          <tr><td>10</td><td>Thu. 9/24</td><td>The First Buddhist Women</td><td><ul><li>Read Strong, &ldquo;Teachings and Community&rdquo; (PDF on Moodle), p. 91&ndash;99</li><li>Read Lopez, &ldquo;Nuns Achieve Nirvana&rdquo;</li></ul></td><td>RRJ 9</td><td>Midterm guidelines distributed</td></tr>
+          <tr><td>11</td><td>Tue. 9/29</td><td>The Buddha&rsquo;s Death</td><td>Read &ldquo;Buddha&rsquo;s Parinirvana&rdquo; (PDF on Moodle)</td><td>RRJ 10</td><td></td></tr>
+          <tr><td>12</td><td>Thu. 10/1</td><td>Midterm</td><td>&mdash;</td><td>&mdash;</td><td>Midterm exam</td></tr>
+          <tr><td>13</td><td>Tue. 10/6</td><td>Game &mdash; Setup Session 1: Overview and Rules; Vedic Religion</td><td><ul><li>Fill out Pre-game survey (link posted on Moodle)</li><li>Read Ashoka Game Book (PDF on Moodle): Section 1 (p. 1&ndash;11) and Rules (p. 58&ndash;60); skim Section 2: Historical Background, Section 3: The Game, and Section 4: Factions</li><li>Skim <em>Rigveda</em> (On Sacrifice, p. 108&ndash;111), <em>Shatapatha Brahmana</em> (On Sacrifice, p. 112&ndash;116), <em>Apastamba Dharmasutra</em> (On Sacrifice p. 117, On Dharma p. 138&ndash;141, On Women p. 161&ndash;163)</li></ul></td><td>RRJ 11</td><td></td></tr>
+          <tr><td>14</td><td>Thu. 10/8</td><td>Game &mdash; Setup Session 2: The <em>Shramana</em> Traditions (Jains and Upanishads); First Faction Meetings</td><td><ul><li>Skim <em>Brihadaranyaka Upanishad</em> (On Sacrifice, On Dharma, On Women); <em>Chandogya Upanishad</em> (On Dharma); <em>Acaranga Sutra</em> (On Sacrifice, On Dharma, On Women) &mdash; take reading notes for use on the RRJ</li><li>Prepare to submit your RRJ for the first round of grading by starring your 3 strongest entries</li></ul></td><td>&mdash;</td><td>Midterm exams handed back</td></tr>
+          <tr><td>15</td><td>Thu. 10/15</td><td>Game &mdash; Council Session 1</td><td><ul><li>Debate on banning animal sacrifice</li><li>Primary texts: On Sacrifice</li></ul></td><td>RRJ 12&ndash;13</td><td>See Ashoka Game tab for full council schedule</td></tr>
+          <tr><td>16</td><td>Tue. 10/20</td><td>Game &mdash; Council Session 2</td><td><ul><li>Debate between traditions and proposal for public works</li><li>Primary texts: On Dharma</li></ul></td><td>&mdash;</td><td></td></tr>
+          <tr><td>17</td><td>Thu. 10/22</td><td>Game &mdash; Council Session 3</td><td>Speeches from royal children and debate about deploying dharma-<em>mah&#257;m&#257;tras</em></td><td>&mdash;</td><td></td></tr>
+          <tr><td>18</td><td>Tue. 10/27</td><td>Game &mdash; Council Session 4</td><td><ul><li>Ban on Ajivikas and cave donation to Ajivikas</li><li>Primary texts: Ajivika readings</li></ul></td><td>&mdash;</td><td></td></tr>
+          <tr><td>19</td><td>Thu. 10/29</td><td>Game &mdash; Council Session 5</td><td><ul><li>Protecting Bhikshunis and ban on women shramanas</li><li>Primary texts: On Women</li></ul></td><td>&mdash;</td><td></td></tr>
+          <tr><td>20</td><td>Tue. 11/3</td><td>Game &mdash; Council Session 6: Succession</td><td>&mdash;</td><td>RRJ 14*</td><td>Last day to withdraw from a course</td></tr>
+          <tr><td>21</td><td>Thu. 11/5</td><td><em>Ashoka</em> Debrief and Buddhism Spreads Beyond India</td><td>Read Salguero Ch. 7 &ldquo;Buddha,&rdquo; Ch. 12 &ldquo;Bodhisattva,&rdquo; and Ch. 13 &ldquo;Compassion&rdquo;</td><td>RRJ 15</td><td></td></tr>
+          <tr><td>22</td><td>Tue. 11/10</td><td>Fundamentals of Mahayana</td><td>Read <em>Bodhicaryavatara</em> (PDF on Moodle)</td><td>&mdash;</td><td></td></tr>
+          <tr><td>23</td><td>Thu. 11/12</td><td>Fundamentals of Mahayana</td><td><ul><li>Read Salguero Ch. 9 &ldquo;Buddha-Nature&rdquo; and Ch. 19 &ldquo;Interconnectedness&rdquo;</li><li>Skim &ldquo;The Tathagatagarbha Sutra&rdquo; (PDF on Moodle) &mdash; we will read this together in class</li></ul></td><td>RRJ 16</td><td></td></tr>
+          <tr><td>24</td><td>Tue. 11/17</td><td>Mahayana in Japanese Literature</td><td><ul><li>Read Salguero Ch. 11 &ldquo;Skillful Means&rdquo;</li><li>Read <em>Japanese Tales</em> (PDF on Moodle)</li></ul></td><td>RRJ 17</td><td></td></tr>
+          <tr><td>25</td><td>Thu. 11/19</td><td>Fun!</td><td>We will be test-playing a new microgame: &ldquo;Eat Meat and Take a Wife: Japanese Buddhist Clerical Reforms of 1872&rdquo;</td><td>&mdash;</td><td></td></tr>
+          <tr><td>26</td><td>Tue. 11/24</td><td>Film</td><td>In class, we will watch the <em>Chef&rsquo;s Table</em> episode, &ldquo;Jeong Kwan&rdquo;</td><td>RRJ 19*</td><td></td></tr>
+          <tr><td>27</td><td>Tue. 12/1</td><td>Buddhism Today &mdash; Asia</td><td><ul><li>Read Salguero Ch. 15 &ldquo;Well-Being&rdquo;</li><li>Read <em>Figures of Buddhist Modernity in Asia</em> (PDF on Moodle)</li></ul></td><td>RRJ 20</td><td></td></tr>
+          <tr><td>28</td><td>Thu. 12/3</td><td>Buddhism Today &mdash; U.S.</td><td><ul><li>Read Salguero Ch. 17 &ldquo;Buddhist&rdquo;</li><li>Read excerpt from Zenju Earthlyn Manuel&rsquo;s &ldquo;Multiplicity in Oneness&rdquo;</li></ul></td><td>RRJ 21</td><td></td></tr>
+          <tr><td>29</td><td>Tue. 12/8</td><td>Final Exam Review</td><td>Bring your RRJ for the final round of grading by starring your strongest entry. Entries 14, 19, and 22 will also be graded for quality. All entries will be graded for completeness.</td><td>RRJ 22*</td><td>Last day of classes for term</td></tr>
+          <tr><td>&mdash;</td><td>Fri. 12/11</td><td>Final Exam</td><td>12:00&ndash;2:30 PM, Hipp Hall 104</td><td>&mdash;</td><td>&mdash;</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- ============================= TAB 6: ASHOKA GAME ============================= -->
+  <section id="panel-ashoka" class="tab-panel" role="tabpanel" aria-labelledby="tab-ashoka" tabindex="0" hidden>
+    <h2>
+      <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.5 5.5l2 2M16.5 16.5l2 2M18.5 5.5l-2 2M7.5 16.5l-2 2"/></svg>
+      The <em>Ashoka</em> Game
+    </h2>
+    <p class="lede">A role-playing simulation of King Ashoka&rsquo;s council, staged in place of several regular class sessions. Everything you need for the game &mdash; schedule, paper prompt, citation rules, and grading &mdash; lives here.</p>
+
+    <h3>Overview</h3>
+    <p>In place of several regular class sessions, we will run <em>Ashoka</em>, a role-playing game in which each student represents a tradition or faction advising King Ashoka&rsquo;s council. You will prepare position papers and deliver speeches in character, drawing on primary texts from the traditions active in Ashoka&rsquo;s era. See the <a href="#policies">Policies tab</a> for the game-specific attendance exception, and the <a href="#graded">Graded Elements tab</a> for how the Position Paper, Speeches, and Engagement components are weighted.</p>
+
+    <h3>Game Schedule</h3>
+    <div class="table-scroll">
+      <table>
+        <caption>Ashoka game session dates and topics</caption>
+        <thead>
+          <tr><th scope="col">Date</th><th scope="col">Session</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Tue. 10/6</td><td>Setup Session 1: Overview and Rules; Vedic Religion</td></tr>
+          <tr><td>Thu. 10/8</td><td>Setup Session 2: The <em>Shramana</em> Traditions (Jains and Upanishads); First Faction Meetings</td></tr>
+          <tr><td>Thu. 10/15</td><td>Council Session 1 &mdash; Debate on banning animal sacrifice</td></tr>
+          <tr><td>Tue. 10/20</td><td>Council Session 2 &mdash; Debate between traditions; proposal for public works</td></tr>
+          <tr><td>Thu. 10/22</td><td>Council Session 3 &mdash; Speeches from royal children; dharma-<em>mah&#257;m&#257;tras</em> debate</td></tr>
+          <tr><td>Tue. 10/27</td><td>Council Session 4 &mdash; Ban on Ajivikas; cave donation to Ajivikas</td></tr>
+          <tr><td>Thu. 10/29</td><td>Council Session 5 &mdash; Protecting Bhikshunis; ban on women shramanas</td></tr>
+          <tr><td>Tue. 11/3</td><td>Council Session 6 &mdash; Succession</td></tr>
+          <tr><td>Thu. 11/5</td><td>Debrief and transition to &ldquo;Buddhism Spreads Beyond India&rdquo;</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>Position Paper Guidelines</h3>
+    <p><strong>Due date:</strong> Mon. 11/16 by 11:59pm to Moodle.</p>
+    <p><strong>Two notes on submission:</strong></p>
+    <ul>
+      <li>It is your responsibility to confirm a successful upload to Moodle. If your paper fails to upload and this is discovered later, it will be considered late. If you have any technical issues, you can email your paper to Dr. Montrose before the deadline and she can upload it on your behalf.</li>
+      <li>Papers submitted late without prior approval from Dr. Montrose will receive a full letter grade penalty per 24 hours over the deadline.</li>
+    </ul>
+    <p><strong>Worth:</strong> 15% of course grade. See the grading rubric below for how these are assessed.</p>
+
+    <p><strong>Prompt for the Advisory Council members (everyone but the Inner Council):</strong> From the position of your character, you will write a persuasive essay on one or both of your speech topics. If you choose to write on one of your speech topics, you may go more in depth, addressing points made by others on your side of the debate, or addressing counterarguments more thoroughly. If you choose to write on both of your speech topics, you will want to find a way to connect them by exploring what values inform your character&rsquo;s position on both topics. Be sure to draw from the game as it played out <em>and</em> provide examples from the primary sources in the game book.</p>
+
+    <p><strong>Prompt for the Inner Council members:</strong> Since you are in leadership positions, you should frame your paper around variations of the &ldquo;core questions&rdquo; of the game from the point of view of your character: How can a king become a dharma king with so many different traditions with their own visions of dharma? What notion of dharma is appropriate for a Dharma-king to pursue? How far should a king go in promoting his own vision of dharma? Did Ashoka&rsquo;s insistence that traditions honor and listen to one another solve the first question? Be sure to provide specific examples from the game as it played out <em>and</em> primary sources in the game book.</p>
+
+    <p><strong>For all papers:</strong> When you write, remember to remain in character as a representative of your tradition in King Ashoka&rsquo;s Council. Do not make arguments based on your own personal feelings or modern notions of sacrifice, or the like. Instead, rely on the ancient texts for guidance on people&rsquo;s thoughts during Ashoka&rsquo;s time.</p>
+
+    <p>This paper should be 1000 words, double spaced. A works cited/bibliography is not needed, but in-text citations from the game book are required.</p>
+
+    <p>In your paper, you need to cite at least three passages from the primary texts (found in the Game Book p. 84&ndash;191 <strong>only</strong>), at least one of which must be from a tradition other than your own. You may quote or paraphrase the cited passages. When quoting, keep the quotation brief and on point (2 lines max). To cite, include the title using the numbering system within the text. For example, to cite the first paragraph of the <em>&#256;pastamba Dharmas&#363;tra</em> in the Gamebook, Section 5.2, On Sacrifice, cite: <em>&#256;pastamba Dharmas&#363;tra</em> 2.25.1. Also, when you first refer to a text, identify the tradition from which it comes.</p>
+
+    <p>Be careful not to just toss in citations or quotations into your paper. They must be integrated into your argument. It is best to develop your argument and then use paraphrases or brief quotations to demonstrate that a given point comes from a primary text.</p>
+
+    <h3>Citation Checklist</h3>
+    <ul>
+      <li>Minimum of three cited passages from the primary texts (p. 84&ndash;191 only)</li>
+      <li>One citation from another tradition</li>
+      <li>Every passage quoted or paraphrased is cited</li>
+      <li>Cited texts are first identified by tradition</li>
+      <li>Cited texts illustrate a point in your argument</li>
+      <li>Quotations are brief (1&ndash;2 lines max) and on point</li>
+    </ul>
+
+    <div class="editor-note">
+      <strong>Editing tip:</strong> This paper must be drafted in a word processor such as Microsoft Word (using the Auto Save to OneDrive feature) or Google Docs that records the document&rsquo;s time-stamped edit history. This edit history, along with TurnItIn&rsquo;s AI detection software, are some of the tools used in assessing cases of AI-related academic integrity concerns. Accordingly, the use of Grammarly and other word processors that rely heavily on AI-based writing suggestions is strongly discouraged.
+    </div>
+
+    <h3>Position Paper Grading Rubric</h3>
+    <p><em>Note: Late submissions without prior permission from Dr. Montrose will result in the loss of one full letter grade for every 24 hours over the deadline.</em></p>
+    <div class="table-scroll">
+      <table>
+        <caption>Ashoka position paper grading criteria by letter grade</caption>
+        <thead>
+          <tr><th scope="col">Grade</th><th scope="col">Criteria</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>A</strong></td>
+            <td>Clearly addresses the prompt and follows all citation guidelines. Detailed, with strong and specific examples and references to the primary texts. Contains thoughtful reflections, observations, and/or analysis of the reading(s) as needed to address your assigned position. Engages with opposing/alternative positions and their respective primary texts/ideas.</td>
+          </tr>
+          <tr>
+            <td><strong>B</strong></td>
+            <td>Addresses the prompt and mostly follows the citation guidelines. Sufficiently detailed to make clear you&rsquo;ve read the relevant primary texts. Provides some examples and/or references to the text.</td>
+          </tr>
+          <tr>
+            <td><strong>C</strong></td>
+            <td>Misses one or more aspects of the prompt and does not follow the citation guidelines. Contains vague language and lacks specific examples, making it hard to discern if the core concepts were understood or if the primary texts were read. Lacks thoughtful engagement with the readings and/or critical thinking relating to the prompt. Contains several typos and/or grammatical mistakes that make it difficult to discern meaning.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- ============================= TAB 7: RUBRICS ============================= -->
+  <section id="panel-rubrics" class="tab-panel" role="tabpanel" aria-labelledby="tab-rubrics" tabindex="0" hidden>
+    <h2>
+      <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 10h18M9 4v16"/></svg>
+      Engagement &amp; RRJ Rubrics
+    </h2>
+    <p class="lede">General rubrics that apply across the semester. The <em>Ashoka</em> Position Paper has its own rubric on the <a href="#ashoka">Ashoka Game tab</a>.</p>
+
+    <h3>Engagement Rubric</h3>
+    <p>Each class, your engagement will be assessed using the following scale:</p>
+
+    <div class="policy-block">
+      <h3>A-level</h3>
+      <ul>
+        <li>Prepared to ask and answer questions, in writing or orally, based on assigned readings;</li>
+        <li>Prepared with any required assignments;</li>
+        <li>Focused on classroom discussions and activities (i.e., not using technology unless it aids in classroom discussion or activities, not conducting side conversations, not engaging in behaviors that disrupt the focus of others);</li>
+        <li>Fully engaged in all in-class activities;</li>
+        <li>Fully attentive when others are speaking; and</li>
+        <li>Fully attentive to your own contributions, which includes&hellip;
+          <ul>
+            <li>giving others the space and time to contribute;</li>
+            <li>understanding that others come to our classroom with different experiences than your own; and</li>
+            <li>being open to learning, including learning from your own mistakes.</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <div class="policy-block accent-maroon">
+      <h3>B-level</h3>
+      <ul>
+        <li>Mostly prepared to ask and answer questions, in writing or orally, based on assigned readings;</li>
+        <li>Prepared with any required assignments;</li>
+        <li>Mostly focused on classroom discussions and activities (i.e., not using technology unless it aids in classroom discussion or activities, not conducting side conversations, not engaging in behaviors that disrupt the focus of others);</li>
+        <li>Mostly engaged in all in-class activities;</li>
+        <li>Mostly attentive when others are speaking; and</li>
+        <li>Mostly attentive to your own contributions, which includes&hellip;
+          <ul>
+            <li>giving others the space and time to contribute;</li>
+            <li>understanding that others come to our classroom with different experiences than your own; and</li>
+            <li>being open to learning, including learning from your own mistakes.</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <div class="policy-block">
+      <h3>C&ndash;D level</h3>
+      <ul>
+        <li>Arrived more than 5 minutes late and/or left before the end of class;</li>
+        <li>Not prepared to ask and answer questions, in writing or orally, based on assigned readings;</li>
+        <li>Not prepared with some or any required assignments;</li>
+        <li>Not focused on classroom discussions and activities (i.e., using technology in ways other than for use in classroom discussion or activities, conducting side conversations, engaging in behaviors that disrupt the focus of others);</li>
+        <li>Not engaged in all in-class activities;</li>
+        <li>Not attentive when others are speaking; OR</li>
+        <li>Not attentive to your own contributions, which includes&hellip;
+          <ul>
+            <li>Not giving others the space and time to contribute;</li>
+            <li>Not understanding that others come to our classroom with different experiences than your own; and</li>
+            <li>Not being open to learning, including learning from your own mistakes.</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <h3>Reading and Reflection Journal (RRJ) Rubric</h3>
+    <div class="table-scroll">
+      <table>
+        <caption>RRJ scoring criteria, out of 10 points total</caption>
+        <thead>
+          <tr><th scope="col">Element</th><th scope="col">Aspects</th><th scope="col" class="num">Points</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>1. Comprehension</td><td>Demonstrates clear understanding of the assigned readings; accurately represents key concepts and ideas</td><td class="num">0&ndash;2</td></tr>
+          <tr><td>2. Analysis</td><td>Goes beyond summary to provide insightful analysis; applies relevant analytical frameworks when appropriate</td><td class="num">0&ndash;2</td></tr>
+          <tr><td>3. Depth of Reflection</td><td>Engages in meaningful personal reflection; connects ideas to own experiences or perspectives</td><td class="num">0&ndash;1</td></tr>
+          <tr><td>4. Creativity</td><td>Responds imaginatively to creative prompts; demonstrates original thinking</td><td class="num">0&ndash;1</td></tr>
+          <tr><td>5. Critical Thinking</td><td>Evaluates ideas critically; considers multiple perspectives</td><td class="num">0&ndash;1</td></tr>
+          <tr><td>6. Connection-Making</td><td>Links concepts across different readings or topics; identifies broader implications or applications</td><td class="num">0&ndash;1</td></tr>
+          <tr><td>7. Intellectual Curiosity</td><td>Raises thought-provoking questions; explores ideas beyond the immediate scope of the prompt</td><td class="num">0&ndash;1</td></tr>
+          <tr><td>8. Evidence of Preparation</td><td>References specific details from assigned readings; shows thorough engagement with course materials</td><td class="num">0&ndash;1</td></tr>
+          <tr><td><strong>Total</strong></td><td></td><td class="num"><strong>/10</strong></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <p>REL 224: Introduction to Buddhism &middot; Questions? Email <a href="mailto:victoria.montrose@furman.edu">victoria.montrose@furman.edu</a></p>
+  <p>Last updated: <!-- EDIT: update this date whenever you revise the syllabus -->August 2026</p>
+</footer>
+
+<script src="js/tabs.js"></script>
+</body>
+</html>
