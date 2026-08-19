@@ -66,16 +66,34 @@
   });
 
   // Deep-link support: open the tab matching the URL hash, on load and
-  // whenever the hash changes (e.g. a same-page link to #rubrics).
+  // whenever the hash changes (e.g. a same-page link to #rubrics). A hash
+  // can also target a specific heading *inside* a panel (e.g. #rrj-rubric)
+  // — in that case the owning tab is selected and the heading itself is
+  // scrolled to, rather than just the top of the panel.
   function selectTabFromHash() {
     var hash = window.location.hash.replace("#", "");
+    if (!hash) return;
+
     var matchedTab = tabs.find(function (tab) {
       return tab.getAttribute("data-hash") === hash;
     });
     if (matchedTab) {
       selectTab(matchedTab, false);
       matchedTab.scrollIntoView({ block: "nearest", inline: "center" });
+      return;
     }
+
+    var target = document.getElementById(hash);
+    if (!target) return;
+    var panel = target.closest('[role="tabpanel"]');
+    if (!panel) return;
+    var panelIndex = panels.indexOf(panel);
+    if (panelIndex === -1) return;
+
+    selectTab(tabs[panelIndex], false);
+    requestAnimationFrame(function () {
+      target.scrollIntoView({ block: "start" });
+    });
   }
 
   window.addEventListener("hashchange", selectTabFromHash);
