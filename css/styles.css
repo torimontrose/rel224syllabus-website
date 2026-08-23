@@ -550,6 +550,17 @@ p.tbd {
   margin: 0;
 }
 
+/* ---- Due-date highlighting: warm gold-yellow to sit with the saffron palette ---- */
+mark {
+  background-color: #ffcc33;
+  color: #000;
+  padding: 0.05em 0.35em;
+  border-radius: 0.25rem;
+  font-weight: 600;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+}
+
 /* ---- Rubric level legend ---- */
 .rubric-scale {
   display: flex;
