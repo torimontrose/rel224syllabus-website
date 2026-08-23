@@ -1,7 +1,7 @@
 /*
- * "What's next?" button: jumps to this week's row(s) on the Weekly
- * Schedule tab. Outside the term's date range, it just scrolls to the
- * top of the page instead.
+ * "What's next?" button: jumps to the Weekly Schedule tab and highlights
+ * the current week's row(s). Before the term starts it shows the first
+ * week; after the term ends it shows the last week.
  */
 (function () {
   "use strict";
@@ -41,12 +41,10 @@
     var first = dated[0].date;
     var last = dated[dated.length - 1].date;
 
-    if (today < first || today > last) {
-      window.scrollTo({ top: 0, behavior: "smooth" });
-      return;
-    }
+    // Before the term, show its first week; after, show its last week.
+    var anchor = today < first ? first : (today > last ? last : today);
 
-    var monday = mondayOf(today);
+    var monday = mondayOf(anchor);
     var sunday = new Date(monday);
     sunday.setDate(monday.getDate() + 6);
 
@@ -56,7 +54,7 @@
 
     var target = thisWeek;
     if (!target.length) {
-      var upcoming = dated.filter(function (d) { return d.date >= today; });
+      var upcoming = dated.filter(function (d) { return d.date >= anchor; });
       target = upcoming.length ? [upcoming[0]] : [dated[dated.length - 1]];
     }
 

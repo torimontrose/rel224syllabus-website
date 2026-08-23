@@ -74,27 +74,26 @@
   <button type="button" id="whats-next-btn" class="whats-next-btn" aria-label="What&rsquo;s next? Jump to this week on the schedule">
     <svg viewBox="0 0 130 152" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
       <defs>
-        <path id="bodhi-leaf" d="M0,-14 C8,-14 13,-7 13,-1 C13,6 6,10 2,16 C1,18 0.5,19 0,23 C-0.5,19 -1,18 -2,16 C-6,10 -13,6 -13,-1 C-13,-7 -8,-14 0,-14 Z"/>
+        <linearGradient id="bodhi-leaf-grad" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#e0b954"/>
+          <stop offset="100%" stop-color="#d9822b"/>
+        </linearGradient>
       </defs>
-      <!-- roots -->
-      <path d="M52,101 C45,105 37,107 28,106" fill="none" stroke="#4a2c1c" stroke-width="3" stroke-linecap="round"/>
-      <path d="M78,101 C85,105 93,107 102,106" fill="none" stroke="#4a2c1c" stroke-width="3" stroke-linecap="round"/>
-      <path d="M65,101 C65,105 64,108 63,111" fill="none" stroke="#4a2c1c" stroke-width="3" stroke-linecap="round"/>
-      <!-- trunk -->
-      <path d="M60,70 C58,84 57,94 51,101 L79,101 C73,94 72,84 70,70 Z" fill="#4a2c1c"/>
-      <!-- one smooth, calm canopy dome (Tree-of-Wisdom silhouette) -->
-      <ellipse cx="65" cy="42" rx="36" ry="33" fill="#c9a24b"/>
-      <ellipse cx="53" cy="29" rx="17" ry="14" fill="#e0b954" opacity="0.55"/>
-      <!-- ring of bodhi leaves outlining the crown -->
-      <use href="#bodhi-leaf" transform="translate(65.0,10.0) rotate(180.0) scale(0.6)" fill="#e0b954"/>
-      <use href="#bodhi-leaf" transform="translate(84.4,16.2) rotate(216.0) scale(0.6)" fill="#ea9a44"/>
-      <use href="#bodhi-leaf" transform="translate(96.1,32.3) rotate(252.0) scale(0.6)" fill="#d9822b"/>
-      <use href="#bodhi-leaf" transform="translate(96.1,51.7) rotate(288.0) scale(0.6)" fill="#e0b954"/>
-      <use href="#bodhi-leaf" transform="translate(84.4,67.8) rotate(324.0) scale(0.6)" fill="#ea9a44"/>
-      <use href="#bodhi-leaf" transform="translate(45.6,67.8) rotate(396.0) scale(0.6)" fill="#d9822b"/>
-      <use href="#bodhi-leaf" transform="translate(33.9,51.7) rotate(432.0) scale(0.6)" fill="#e0b954"/>
-      <use href="#bodhi-leaf" transform="translate(33.9,32.3) rotate(468.0) scale(0.6)" fill="#ea9a44"/>
-      <use href="#bodhi-leaf" transform="translate(45.6,16.2) rotate(504.0) scale(0.6)" fill="#d9822b"/>
+      <g transform="translate(65,50) scale(0.9)">
+        <!-- petiole -->
+        <path d="M0,-38 L0,-47" fill="none" stroke="#8a5a24" stroke-width="2.5" stroke-linecap="round"/>
+        <!-- single bodhi leaf: heart-shaped base tapering to the classic drip tip -->
+        <path d="M0,-38 C-10,-50 -28,-48 -36,-34 C-44,-20 -40,-4 -28,10 C-18,22 -8,32 -3,48 C-1,56 0,64 0,74 C0,64 1,56 3,48 C8,32 18,22 28,10 C40,-4 44,-20 36,-34 C28,-48 10,-50 0,-38 Z"
+              fill="url(#bodhi-leaf-grad)" stroke="#8a5a24" stroke-width="1.5"/>
+        <!-- veins -->
+        <path d="M0,-34 C0,0 0,35 0,70" fill="none" stroke="#8a5a24" stroke-width="1.4" opacity="0.6"/>
+        <path d="M0,-18 C-8,-12 -14,-8 -20,-2" fill="none" stroke="#8a5a24" stroke-width="1" opacity="0.5"/>
+        <path d="M0,-18 C8,-12 14,-8 20,-2" fill="none" stroke="#8a5a24" stroke-width="1" opacity="0.5"/>
+        <path d="M0,2 C-9,9 -16,15 -23,22" fill="none" stroke="#8a5a24" stroke-width="1" opacity="0.5"/>
+        <path d="M0,2 C9,9 16,15 23,22" fill="none" stroke="#8a5a24" stroke-width="1" opacity="0.5"/>
+        <path d="M0,24 C-6,29 -10,34 -15,40" fill="none" stroke="#8a5a24" stroke-width="1" opacity="0.5"/>
+        <path d="M0,24 C6,29 10,34 15,40" fill="none" stroke="#8a5a24" stroke-width="1" opacity="0.5"/>
+      </g>
       <text x="65" y="128" text-anchor="middle" font-family="var(--font-display), serif" font-size="14" font-weight="600" fill="var(--ink)">What&rsquo;s next?</text>
     </svg>
   </button>
