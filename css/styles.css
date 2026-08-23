@@ -213,10 +213,8 @@ button:focus-visible,
 }
 
 .whats-next-btn {
-  position: absolute;
-  top: 1.1rem;
-  right: 1.1rem;
-  z-index: 2;
+  display: block;
+  margin: 0.5rem auto 0.75rem;
   background: none;
   border: none;
   padding: 0;
@@ -256,12 +254,6 @@ button:focus-visible,
 }
 
 @media (max-width: 640px) {
-  .whats-next-btn {
-    position: static;
-    display: block;
-    margin: 0 auto 1rem;
-  }
-
   .whats-next-btn svg {
     width: 5.5rem;
   }
