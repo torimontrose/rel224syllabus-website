@@ -182,7 +182,7 @@ exams = item("Exams &mdash; 25%",
   '<p>There will be 2 exams in this class (each worth 12.5%): a midterm (see the <a href="#schedule">Weekly Schedule</a>) and a final exam on <mark>Friday, December 11, 12:00&ndash;2:30 PM in Hipp Hall 104</mark>. They will be cumulative, but with a greater emphasis on the material taught since the midterm. Since we will be learning a lot of new terms in multiple global languages, a single 3x5-inch handwritten note card may be used during each exam. Exams will be a combination of multiple choice, short answer, and textual/image analysis.</p>')
 
 ashoka_paper = item("<em>Ashoka</em> Position Paper &mdash; 15%",
-  '<p>This is now an in-class assignment: students will write a position paper from the perspective of their character. See the <a href="#ashoka">Ashoka Game tab</a> for more information. <strong>More details forthcoming.</strong></p>')
+  '<p>This is an in-class assignment: students will write a position paper from the perspective of their character. See the <a href="#ashoka">Ashoka Game tab</a> for more information. <strong>More details forthcoming.</strong></p>')
 
 ashoka_speeches = item("<em>Ashoka</em> Speeches (&times;2) &mdash; 10%",
   '<p>Based on your position paper, you will give 2 short in-class speeches taking the position assigned to your role in the <em>Ashoka</em> game. Since the content of your speeches should largely match the content of your position paper, this part of the grade primarily assesses the quality of your delivery and adherence to the allotted time.</p>')
@@ -210,6 +210,7 @@ pages.append(f"""
     <h4 class="block-title" style="margin-top:0.15in;">Element Descriptions</h4>
     {attendance}
     {exams}
+    {ashoka_paper}
   </div>
 </div>
 """)
@@ -219,7 +220,6 @@ pages.append(f"""
   {RUNHEAD}
   <div class="pad" style="margin-top:0.32in;">
     {rrj}
-    {ashoka_paper}
     {ashoka_speeches}
     {ashoka_engagement}
   </div>
@@ -271,7 +271,7 @@ pages.append(f"""
 
     <h4 class="block-title" style="font-size:13px;">Position Paper Guidelines</h4>
     <div class="prose">
-      <p style="font-size:11px; line-height:1.5;">This is now an in-class assignment: students will write a position paper from the perspective of their character. <strong>More details forthcoming.</strong></p>
+      <p style="font-size:11px; line-height:1.5;">This is an in-class assignment: students will write a position paper from the perspective of their character. <strong>More details forthcoming.</strong></p>
     </div>
 
     <h4 class="block-title" style="font-size:13px; margin-top:0.15in;">Position Paper Grading Rubric</h4>
