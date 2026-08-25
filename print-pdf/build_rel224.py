@@ -202,15 +202,14 @@ pages.append(f"""
         <tr><td>Attendance and Engagement</td><td class="num">20%</td></tr>
         <tr><td>Reading and Reflection Journal (RRJ)</td><td class="num">25%</td></tr>
         <tr><td>Exams (2, 12.5% each)</td><td class="num">25%</td></tr>
-        <tr><td><em>Ashoka</em> Position Paper</td><td class="num">15%</td></tr>
         <tr><td><em>Ashoka</em> Speeches (&times;2)</td><td class="num">10%</td></tr>
         <tr><td><em>Ashoka</em> Engagement</td><td class="num">5%</td></tr>
+        <tr><td><em>Ashoka</em> Position Paper</td><td class="num">15%</td></tr>
       </tbody>
     </table>
     <h4 class="block-title" style="margin-top:0.15in;">Element Descriptions</h4>
     {attendance}
-    {exams}
-    {ashoka_paper}
+    {rrj}
   </div>
 </div>
 """)
@@ -219,9 +218,10 @@ pages.append(f"""
 <div class="page">
   {RUNHEAD}
   <div class="pad" style="margin-top:0.32in;">
-    {rrj}
+    {exams}
     {ashoka_speeches}
     {ashoka_engagement}
+    {ashoka_paper}
   </div>
 </div>
 """)
