@@ -182,10 +182,10 @@ exams = item("Exams &mdash; 25%",
   '<p>There will be 2 exams in this class (each worth 12.5%): a midterm (see the <a href="#schedule">Weekly Schedule</a>) and a final exam on <mark>Friday, December 11, 12:00&ndash;2:30 PM in Hipp Hall 104</mark>. They will be cumulative, but with a greater emphasis on the material taught since the midterm. Since we will be learning a lot of new terms in multiple global languages, a single 3x5-inch handwritten note card may be used during each exam. Exams will be a combination of multiple choice, short answer, and textual/image analysis.</p>')
 
 ashoka_paper = item("<em>Ashoka</em> Position Paper &mdash; 15%",
-  '<p>You will write a 1000-word paper following your two in-class speeches as part of the <em>Ashoka</em> game. See the <a href="#ashoka">Ashoka Game tab</a> for the full prompt, citation guidelines, and grading rubric.</p>')
+  '<p>This is now an in-class assignment: students will write a position paper from the perspective of their character. See the <a href="#ashoka">Ashoka Game tab</a> for more information. <strong>More details forthcoming.</strong></p>')
 
 ashoka_speeches = item("<em>Ashoka</em> Speeches (&times;2) &mdash; 10%",
-  '<p>Based on the position paper you write, you will give 2 short in-class speeches taking the position assigned to your role in the <em>Ashoka</em> game. Since the content of your speeches should largely match the content of your position paper, this part of the grade primarily assesses the quality of your delivery and adherence to the allotted time.</p>')
+  '<p>Based on your position paper, you will give 2 short in-class speeches taking the position assigned to your role in the <em>Ashoka</em> game. Since the content of your speeches should largely match the content of your position paper, this part of the grade primarily assesses the quality of your delivery and adherence to the allotted time.</p>')
 
 ashoka_engagement = item("<em>Ashoka</em> Engagement &mdash; 5%",
   '<p>This is a separate engagement grade from your overall course engagement grade. It captures all the ways you might engage with this game, including (but not limited to): consistently demonstrating preparation for each council session (not only the ones in which you are giving a speech); active coordination, collaboration, and communication with your faction (or across factions if the need arises); asking questions and/or commenting on others&rsquo; speeches; actions within the game that are consistent with your assigned role (liberally interpreted); and taking notes during sessions while avoiding non-game-related distractions.</p>')
@@ -271,43 +271,11 @@ pages.append(f"""
 
     <h4 class="block-title" style="font-size:13px;">Position Paper Guidelines</h4>
     <div class="prose">
-      <p style="font-size:10px; line-height:1.4;"><strong>When:</strong> This paper is written in class during the <strong>Debrief and In-class Paper</strong> session on <mark>Tue. 11/3</mark>.</p>
-      <p style="font-size:10px; line-height:1.4;"><strong>Worth:</strong> 15% of course grade. See the grading rubric below for how these are assessed.</p>
-      <p style="font-size:10px; line-height:1.4;"><strong>Prompt for the Advisory Council members (everyone but the Inner Council):</strong> From the position of your character, you will write a persuasive essay on one or both of your speech topics. If you choose to write on one of your speech topics, you may go more in depth, addressing points made by others on your side of the debate, or addressing counterarguments more thoroughly. If you choose to write on both of your speech topics, you will want to find a way to connect them by exploring what values inform your character&rsquo;s position on both topics. Be sure to draw from the game as it played out <em>and</em> provide examples from the primary sources in the game book.</p>
-      <p style="font-size:10px; line-height:1.4;"><strong>Prompt for the Inner Council members:</strong> Since you are in leadership positions, you should frame your paper around variations of the &ldquo;core questions&rdquo; of the game from the point of view of your character: How can a king become a dharma king with so many different traditions with their own visions of dharma? What notion of dharma is appropriate for a Dharma-king to pursue? How far should a king go in promoting his own vision of dharma? Did Ashoka&rsquo;s insistence that traditions honor and listen to one another solve the first question? Be sure to provide specific examples from the game as it played out <em>and</em> primary sources in the game book.</p>
-      <p style="font-size:10px; line-height:1.4;"><strong>For all papers:</strong> When you write, remember to remain in character as a representative of your tradition in King Ashoka&rsquo;s Council. Do not make arguments based on your own personal feelings or modern notions of sacrifice, or the like. Instead, rely on the ancient texts for guidance on people&rsquo;s thoughts during Ashoka&rsquo;s time.</p>
-      <p style="font-size:10px; line-height:1.4;">This paper should be 1000 words, double spaced. A works cited/bibliography is not needed, but in-text citations from the game book are required.</p>
-      <p style="font-size:10px; line-height:1.4;">In your paper, you need to cite at least three passages from the primary texts (found in the Game Book p. 84&ndash;191 <strong>only</strong>), at least one of which must be from a tradition other than your own. You may quote or paraphrase the cited passages. When quoting, keep the quotation brief and on point (2 lines max). To cite, include the title using the numbering system within the text. For example, to cite the first paragraph of the <em>&#256;pastamba Dharmas&#363;tra</em> in the Gamebook, Section 5.2, On Sacrifice, cite: <em>&#256;pastamba Dharmas&#363;tra</em> 2.25.1. Also, when you first refer to a text, identify the tradition from which it comes.</p>
-      <p style="font-size:10px; line-height:1.4;">Be careful not to just toss in citations or quotations into your paper. They must be integrated into your argument. It is best to develop your argument and then use paraphrases or brief quotations to demonstrate that a given point comes from a primary text.</p>
+      <p style="font-size:11px; line-height:1.5;">This is now an in-class assignment: students will write a position paper from the perspective of their character. <strong>More details forthcoming.</strong></p>
     </div>
-  </div>
-</div>
-""")
 
-pages.append(f"""
-<div class="page">
-  {RUNHEAD}
-  <div class="pad" style="margin-top:0.32in;">
-    <h4 class="block-title">Citation Checklist</h4>
-    <ul class="prose" style="font-size:11.5px; line-height:1.5;">
-      <li>Minimum of three cited passages from the primary texts (p. 84&ndash;191 only)</li>
-      <li>One citation from another tradition</li>
-      <li>Every passage quoted or paraphrased is cited</li>
-      <li>Cited texts are first identified by tradition</li>
-      <li>Cited texts illustrate a point in your argument</li>
-      <li>Quotations are brief (1&ndash;2 lines max) and on point</li>
-    </ul>
-
-    <h4 class="block-title" style="margin-top:0.22in;">Position Paper Grading Rubric</h4>
-    <p class="prose" style="font-size:10.2px; font-style:italic; color:var(--ink-soft); margin-bottom:0.1in;">Note: Students who miss this class session should contact Dr. Montrose to arrange a makeup, per the course absence policy.</p>
-    <table class="weights" style="font-size:10.3px;">
-      <thead><tr><th style="width:0.5in;">Grade</th><th>Criteria</th></tr></thead>
-      <tbody>
-        <tr><td><strong>A</strong></td><td>Clearly addresses the prompt and follows all citation guidelines. Detailed, with strong and specific examples and references to the primary texts. Contains thoughtful reflections, observations, and/or analysis of the reading(s) as needed to address your assigned position. Engages with opposing/alternative positions and their respective primary texts/ideas.</td></tr>
-        <tr><td><strong>B</strong></td><td>Addresses the prompt and mostly follows the citation guidelines. Sufficiently detailed to make clear you&rsquo;ve read the relevant primary texts. Provides some examples and/or references to the text.</td></tr>
-        <tr><td><strong>C</strong></td><td>Misses one or more aspects of the prompt and does not follow the citation guidelines. Contains vague language and lacks specific examples, making it hard to discern if the core concepts were understood or if the primary texts were read. Lacks thoughtful engagement with the readings and/or critical thinking relating to the prompt. Contains several typos and/or grammatical mistakes that make it difficult to discern meaning.</td></tr>
-      </tbody>
-    </table>
+    <h4 class="block-title" style="font-size:13px; margin-top:0.15in;">Position Paper Grading Rubric</h4>
+    <p class="prose" style="font-size:11px; font-style:italic; color:var(--ink-soft);">Forthcoming.</p>
   </div>
 </div>
 """)
