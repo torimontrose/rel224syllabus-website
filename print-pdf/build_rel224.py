@@ -185,7 +185,7 @@ ashoka_paper = item("<em>Ashoka</em> Position Paper &mdash; 15%",
   '<p>This is an in-class assignment: students will write a position paper from the perspective of their character. See the <a href="#ashoka">Ashoka Game tab</a> for more information. <strong>More details forthcoming.</strong></p>')
 
 ashoka_speeches = item("<em>Ashoka</em> Speeches (&times;2) &mdash; 10%",
-  '<p>Based on your position paper, you will give 2 short in-class speeches taking the position assigned to your role in the <em>Ashoka</em> game. Since the content of your speeches should largely match the content of your position paper, this part of the grade primarily assesses the quality of your delivery and adherence to the allotted time.</p>')
+  '<p>Speeches should be no shorter than 3 minutes and no longer than 4 minutes. After each speech, the speaker must remain at the podium until they have answered all the questions from the general and inner council (a minimum of 1 question must be answered before sitting down). Because questions can come from both your allies and your rivals, you will be best prepared to answer questions at the podium if you have done some research into the counter arguments for your position.</p>')
 
 ashoka_engagement = item("<em>Ashoka</em> Engagement &mdash; 5%",
   '<p>This is a separate engagement grade from your overall course engagement grade. It captures all the ways you might engage with this game, including (but not limited to): consistently demonstrating preparation for each council session (not only the ones in which you are giving a speech); active coordination, collaboration, and communication with your faction (or across factions if the need arises); asking questions and/or commenting on others&rsquo; speeches; actions within the game that are consistent with your assigned role (liberally interpreted); and taking notes during sessions while avoiding non-game-related distractions.</p>')
@@ -373,7 +373,7 @@ pages.append(f"""
 <div class="page">
   {RUNHEAD}
   <div class="pad" style="margin-top:0.2in;">
-    <div class="sec-title" id="rubrics" style="font-size:22px;">Engagement &amp; RRJ Rubrics</div>
+    <div class="sec-title" id="rubrics" style="font-size:22px;">Engagement, RRJ &amp; Speech Rubrics</div>
     <div class="sec-kicker" style="margin-bottom:0.1in;">General rubrics that apply across the semester. The <em>Ashoka</em> Position Paper has its own rubric on the Ashoka Game tab.</div>
     <h4 class="block-title" style="margin-bottom:0.06in;">Engagement Rubric</h4>
     <p class="prose" style="font-size:10.5px; margin:0 0 0.08in;">Each class, your engagement will be assessed using the following scale:</p>
@@ -445,6 +445,26 @@ pages.append(f"""
         <tr><td>7. Intellectual Curiosity</td><td>Raises thought-provoking questions; explores ideas beyond the immediate scope of the prompt</td><td class="num">0&ndash;1</td></tr>
         <tr><td>8. Evidence of Preparation</td><td>References specific details from assigned readings; shows thorough engagement with course materials</td><td class="num">0&ndash;1</td></tr>
         <tr><td><strong>Total</strong></td><td></td><td class="num"><strong>/10</strong></td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+""")
+
+# ---------------- SPEECH RUBRIC ----------------
+pages.append(f"""
+<div class="page">
+  {RUNHEAD}
+  <div class="pad" style="margin-top:0.2in;">
+    <h4 class="block-title" style="margin-bottom:0.06in;" id="speech-rubric"><em>Ashoka</em> Speech Rubric</h4>
+    <p class="prose" style="font-size:10.5px; margin:0 0 0.08in;">Each criterion is scored 1&ndash;3 (total out of 9). The speech is worth 5% of the course grade.</p>
+    <table class="weights">
+      <thead><tr><th>Criterion</th><th>3 &ndash; Excellent</th><th>2 &ndash; Good</th><th>1 &ndash; Needs Improvement</th></tr></thead>
+      <tbody>
+        <tr><td>Evidence of preparation</td><td>Primary source texts are well integrated and drive the argument; counterarguments are anticipated and addressed; Q&amp;A answers are thoughtful and grounded in the sources</td><td>Primary sources are used but only loosely tied to the argument; counterarguments are acknowledged but not fully addressed; Q&amp;A answers are adequate but thin</td><td>Few or no primary sources, or sources are only name-dropped; counterarguments are not anticipated; Q&amp;A answers are unprepared or off-point</td></tr>
+        <tr><td>Adherence to time limit</td><td>Between 3:00 and 4:00</td><td>Within 30 seconds outside the range (2:30&ndash;3:00 or 4:00&ndash;4:30)</td><td>More than 30 seconds outside the range (under 2:30 or over 4:30)</td></tr>
+        <tr><td>Quality of delivery</td><td>Consistently audible; speaks from notes rather than reading them; clear evidence of practice (smooth pacing, little hesitation)</td><td>Mostly audible, with occasional lapses; relies on notes at times; some evidence of practice</td><td>Often inaudible; reads straight from notes; little evidence of practice</td></tr>
+        <tr><td><strong>Total</strong></td><td></td><td></td><td class="num"><strong>/9</strong></td></tr>
       </tbody>
     </table>
   </div>
